@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	    <meta charset="utf-8">
+	    <title>главная страница</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+	<body>
+        <header class="flex-container">
+
+            <div class="title" style="margin: 10px; font-size: larger; color: white;">QuizLab</div>
+            <div class="title">
+                <a href='#'><input type='button' value='главная страница' class="title" style="color: white;"></a>
+            </div>
+            <div class="title">
+                <a href='catalog.html'><input type='button' value='каталог' class="title"></a>
+            </div>
+            <div class="title">
+                <a href='contacts.html'><input type='button' value='контакты' class="title"></a>
+            </div>
+            <div class="title" style="margin: 10px;">
+                <a href='account.html'><input type='button' value='аккаунт' class="title"></a>
+            </div>
+
+        </header>
+        <div>
+            <h1 align="center">Добро пожаловать на QuizLab</h1>
+            <h2 align="center">  </h2>
+        </div>
+       
+    </body>
+</html>
