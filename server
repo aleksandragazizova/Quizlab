@@ -1,0 +1,21 @@
+var express = require("express");
+var app = express();
+var server = app.listen(3000);
+var socket = require("socket.io");
+var io = socket(server);
+
+app.use(express.static('public'));
+
+console.log("Server is running");
+
+io.sockets.on("connection", newConnnection);
+
+function newConnnection(socket) {
+    console.log('new connection!!!' + socket.id);
+    socket.on("button_click", mouseMsg);
+
+    function mouseMsg(data) {
+        socket.broadcast.emit("button_click", data);
+        //console.log(Click);
+    }
+}
