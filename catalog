@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	    <meta charset="utf-8">
+	    <title>каталог</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="flex-container">
+            <div class="title" style="margin: 10px; font-size: larger; color: white;">QuizLab</div>
+            <div class="title">
+                <a href='quizlab main page.html'><input type='button' value='главная страница' class="title"></a>
+            </div>
+            <div class="title">
+                <a href='catalog.html'><input type='button' value='каталог' class="title" style="color: white;"></a>
+            </div>
+            <div class="title">
+                <a href='contacts.html'><input type='button' value='контакты' class="title"></a>
+            </div>
+            <div class="title" style="margin: 10px;">
+                <a href='account.html'><input type='button' value='аккаунт' class="title"></a>
+            </div>
+        </header>
+
+        <div class="button" style="margin-left: 80%; min-width: 10%;">
+            <form method="GET" action="#">
+            <input type='text' name='search' placeholder='поиск' style="background-color: transparent; border: none;">
+            <input type='submit' value='Отправить' style="background-color: transparent; border: none; " class="lupa">
+            </form>
+        </div>
+
+        <div class="conteiner">
+
+        <div class="catalog_left">
+            <p>История</p>
+            <p>Английский</p>
+            <p>Математика</p>
+        </div>
+        <div class="catalog_main">
+
+            <div class="catalog_test" style="background-image: url(img/таблица_сток.jpg);">
+                <!--<p> Таблица умножения </p>-->
+                <a href='http://localhost:3000/quiz.html'><input type='button' value='Таблица умножения' class="button_test"></a>
+            </div>
+            <div class="catalog_test">
+                <p style="color:rgb(134, 134, 134); font-size: 15px;"> пример блока </p>
+            </div>
+            <div class="catalog_test">
+                <p style="color:rgb(134, 134, 134); font-size: 15px;"> пример блока </p>
+            </div>
+
+        </div>
+
+        </div>
+    </body>
+</html>
